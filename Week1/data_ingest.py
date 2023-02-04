@@ -5,7 +5,7 @@ from time import time
 
 import pandas as pd
 from sqlalchemy import create_engine
-from !wget https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv import database_exists, create_database
+from sqlalchemy_utils import database_exists, create_database
 
 def main(params):
     user = params.user

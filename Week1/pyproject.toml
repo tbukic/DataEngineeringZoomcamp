@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "Data Engineering Zoomcamp 2023 - Week 1"
+version = "0.1.0"
+description = ""
+authors = ["tbukic <contact@tome.8shield.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.3"
+sqlalchemy = "^2.0.0"
+psycopg2-binary = "^2.9.5"
+
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.18.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
