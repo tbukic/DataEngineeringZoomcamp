@@ -37,3 +37,8 @@ prefect profile ls
 # Use Orion server API url instad of ephermal Prefect API
 prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api
 ```
+
+```
+prefect agent start -q default
+prefect deployment run etl-parent-flow/docker-flow -p "months=[1,2]"
+```
