@@ -918,6 +918,18 @@ protobuf = ">=3.19.5,<3.20.0 || >3.20.0,<3.20.1 || >3.20.1,<4.21.1 || >4.21.1,<4
 grpc = ["grpcio (>=1.44.0,<2.0.0dev)"]
 
 [[package]]
+name = "graphql-core"
+version = "3.2.3"
+description = "GraphQL implementation for Python, a port of GraphQL.js, the JavaScript reference implementation for GraphQL."
+category = "main"
+optional = false
+python-versions = ">=3.6,<4"
+files = [
+    {file = "graphql-core-3.2.3.tar.gz", hash = "sha256:06d2aad0ac723e35b1cb47885d3e5c45e956a53bc1b209a9fc5369007fe46676"},
+    {file = "graphql_core-3.2.3-py3-none-any.whl", hash = "sha256:5766780452bd5ec8ba133f8bf287dc92713e3868ddd83aee4faab9fc3e303dc3"},
+]
+
+[[package]]
 name = "greenlet"
 version = "2.0.2"
 description = "Lightweight in-process concurrent programming"
@@ -1789,6 +1801,25 @@ dev = ["black", "coverage", "flake8", "google-cloud-aiplatform", "google-cloud-b
 secret-manager = ["google-cloud-secret-manager"]
 
 [[package]]
+name = "prefect-github"
+version = "0.1.5"
+description = "Prefect integrations interacting with GitHub"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "prefect-github-0.1.5.tar.gz", hash = "sha256:6f4a9a239251bbccc2032248d05638fc3e1cba98f5b416fd3f56cb809787bb6f"},
+    {file = "prefect_github-0.1.5-py3-none-any.whl", hash = "sha256:f9f1797eadaa76a871808e689936bbfd0d2696668dd0ae7e05ed677eebb22add"},
+]
+
+[package.dependencies]
+prefect = ">=2.0.0"
+sgqlc = ">=15.0"
+
+[package.extras]
+dev = ["black", "coverage", "flake8", "interrogate", "isort", "mkdocs", "mkdocs-gen-files", "mkdocs-material", "mkdocstrings[python]", "mock", "mypy", "pillow", "pre-commit", "pytest", "pytest-asyncio"]
+
+[[package]]
 name = "prefect-sqlalchemy"
 version = "0.2.2"
 description = "Prefect integrations for interacting with SQLAlchemy."
@@ -2507,6 +2538,26 @@ testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8 (<5)", "flake8-202
 testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
+name = "sgqlc"
+version = "16.1"
+description = "Simple GraphQL Client"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "sgqlc-16.1-py3-none-any.whl", hash = "sha256:d472f25101e40b05dab30193e3fc4ecc36bd671f7a9b04a49954a98d121f0fdb"},
+    {file = "sgqlc-16.1.tar.gz", hash = "sha256:21591009345b116b43a7a7d3995edc25dc2d14092273028205b86d07843a19ac"},
+]
+
+[package.dependencies]
+graphql-core = "*"
+
+[package.extras]
+requests = ["requests"]
+sphinx = ["sphinx", "sphinx-argparse"]
+websocket = ["websocket-client"]
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -2900,4 +2951,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "597e9393935c770b83c97d8fecd2364626226323083a14dbb2021c6c15e5495f"
+content-hash = "a8d1bd6b5130f107fb5703373ab1e450817f7da4d2744d7df9289b3153008ef7"

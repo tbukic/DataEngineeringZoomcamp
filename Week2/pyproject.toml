@@ -17,6 +17,7 @@ pandas_gbq = "^0.18.1"
 psycopg2-binary = "^2.9.5"
 sqlalchemy = "^1.4.46"
 sqlalchemy-utils = "^0.39.0"
+prefect-github = "^0.1.5"
 
 [tool.poetry.group.dev.dependencies]
 poethepoet = "^0.18.1"

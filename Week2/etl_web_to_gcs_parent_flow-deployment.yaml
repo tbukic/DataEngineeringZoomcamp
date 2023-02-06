@@ -1,7 +1,7 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'etl-web-to-gcs-parent-flow'
 ###
-name: hw_web_to_gcs
+name: hw_web_to_gcs_gh
 description: null
 version: e1236c280ba7e018c3ef3ab209e61c23
 # The work queue that will handle this deployment's runs
@@ -9,10 +9,7 @@ work_queue_name: default
 work_pool_name: default-agent-pool
 tags: []
 parameters: {}
-schedule:
-  cron: 0 5 1 * *
-  timezone: UTC
-  day_or: true
+schedule: null
 is_schedule_active: true
 infra_overrides: {}
 
@@ -29,13 +26,22 @@ infrastructure:
   command: null
   stream_output: true
   working_dir: null
-  _block_document_id: 8d46b182-bf3b-4871-b1f7-54b77901a195
-  _block_document_name: anonymous-82604251-e005-40b2-a76d-a6db53b904f7
+  _block_document_id: 734392f0-55e5-4854-b5b6-172a34dabe73
+  _block_document_name: anonymous-76486d10-723c-4c44-bcb7-11564c76350e
   _is_anonymous: true
   block_type_slug: process
   _block_type_slug: process
-storage: null
-path: /home/cronos/Workspace/Python/DEZoomcamp2023/Week2
+storage:
+  repository: git@github.com:tbukic/DataEngineeringZoomcamp.git
+  reference: null
+  access_token: null
+  include_git_objects: true
+  _block_document_id: bab34e05-48ba-401b-92e7-0021fc3dc57b
+  _block_document_name: w2-h2-gh-block-v01
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: Week2/homework/
 entrypoint: homework/parametrized_etl_web_to_gcs.py:etl_web_to_gcs_parent_flow
 parameter_openapi_schema:
   title: Parameters
@@ -62,4 +68,4 @@ parameter_openapi_schema:
       type: string
   required: null
   definitions: null
-timestamp: '2023-02-06T01:19:44.715933+00:00'
+timestamp: '2023-02-06T02:15:31.125365+00:00'
